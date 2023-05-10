@@ -1,1 +1,76 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+#expression, #product {
+  width: 200px;
+  text-align: right;
+  text-align: right;
+  overflow: scroll;
+  transition: all 0.4s;
+  font-family: 'Quicksand', sans-serif; 
+}
+
+#expression {
+  height: 50px;
+  font-size: 35px;
+  background: #222;
+  padding: 3px;
+  padding-top: 15px;
+}
+
+#product {
+  height: 30px;
+  font-size: 20px;
+  border-bottom: 0.1px solid #323232;
+  background: #111;
+  padding: 3px;
+  padding-top: 10px;
+}
+
+
+button {
+  width: 50px;
+  height: 50px;
+  background: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  transition: 0.4s;
+  user-select: none;
+}
+
+:root {
+  --a: #F98036;
+}
+
+.op {
+  color: var(--a);
+}
+
+button:active {
+  background: var(--a);
+  color: white;
+  transition: 0.4s;
+}
+
